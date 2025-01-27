@@ -2,9 +2,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import WelcomePage from './components/WelcomePage';
-import MainPage from './components/MainPage';
-import WatchList from './components/WatchList';
+import WelcomePage from './routes/WelcomePage';
+import MainPage from './routes/MainPage';
+import WatchList from './routes/WatchList';
 
 
 
