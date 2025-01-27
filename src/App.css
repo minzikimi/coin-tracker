@@ -1,36 +1,66 @@
 .app {
-  max-width: 800px;
+
   margin: 0 auto;
-  padding: 20px;
+
   font-family: Arial, sans-serif;
 }
 
 h1 {
-  color: #333;
+  color:white;
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-} 
-
-li {
-  background-color: #f4f4f4;
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  cursor: pointer;
+p{
+  color:var(--sub-text-color);
 }
 
-li:hover {
-  background-color: #e8e8e8;
-}
+
+
+
 
 strong {
   display: block;
   text-align: center;
   font-size: 18px;
   color: #666;
+}
+
+:root {
+  --background-color: #123962;
+  --main-text-color:white;
+  --sub-text-color:rgb(185, 185, 185);
+  --accent-color:  #FF6B00;
+}
+
+body {
+  background-color: #123962;
+  color: var(--primary-blue);
+  margin:0;
+  padding:0;
+}
+
+
+.main-page-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: var(--secondary-blue);
+  color: white;
+}
+
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  .coin-table {
+    font-size: 0.8em;
+  }
+  
+  .coin-table th,
+  .coin-table td {
+    padding: 8px 10px;
+  }
 }

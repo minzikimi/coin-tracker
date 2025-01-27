@@ -1,7 +1,7 @@
 
 
 function Detail (){
-    return null;
+    return <h1>this is detail page</h1>
 }
 
 
