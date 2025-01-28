@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<WelcomePage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/detail/:id" element={<Detail />} />
-          <Route path="/watchlist" element={<Watchlist />} />
+          <Route path="/watchlist" element={<WatchList />} />
         </Routes>
         <Footer />
       </div>
