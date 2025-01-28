@@ -7,6 +7,7 @@ import WelcomePage from "./routes/WelcomePage/WelcomePage";
 import MainPage from './routes/MainPage/MainPage';
 import WatchList from './routes/WatchList/WatchList';
 import Detail from './routes/Detail/Detail'; 
+import Aboutus from "./routes/Aboutus/Aboutus";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/watchlist" element={<WatchList />} />
+          <Route path="/aboutus" element={<Aboutus />} />
         </Routes>
         <Footer />
       </div>

@@ -59,7 +59,7 @@ function MainPage() {
                     <td>
                       <Link to={`/main/${coin.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                         <img
-                          src={`https://assets.coincap.io/assets/icons/${coin.symbol.toLowerCase()}@2x.png`}
+                          src={`https://static.coinpaprika.com/coin/${coin.id}/logo.png`}
                           alt={`${coin.name} icon`}
                           style={{ width: "20px", height: "20px", marginRight: "10px" }}
                         />

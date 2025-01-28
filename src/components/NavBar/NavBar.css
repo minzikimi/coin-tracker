@@ -17,6 +17,7 @@ header{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
+        gap:3rem;
     
         li a{
             color:white;
@@ -27,3 +28,13 @@ header{
         }
     }
   }
+
+  .logo {
+    width: 300px;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
