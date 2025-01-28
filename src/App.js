@@ -1,12 +1,12 @@
 // import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Footer from "./components/Footer";
-import WelcomePage from './routes/WelcomePage';
-import MainPage from './routes/MainPage';
-import WatchList from './routes/WatchList';
-import Detail from './routes/Detail'; 
+import NavBar from "../src/components/NavBar/NavBar";
+import Footer from "../src/components/Footer/Footer";
+import WelcomePage from "./routes/WelcomePage/WelcomePage";
+import MainPage from './routes/MainPage/MainPage';
+import WatchList from './routes/WatchList/WatchList';
+import Detail from './routes/Detail/Detail'; 
 
 function App() {
   return (

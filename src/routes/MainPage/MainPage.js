@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Converter from "../components/Converter";
+import Converter from "../../components/Converter/Converter";
 import { Link } from "react-router-dom";
 import "./MainPage.css";
 
@@ -34,6 +34,11 @@ function MainPage() {
         <h1>Your Crypto, Your Control: Track, Analyze, Succeed</h1>
         <p>Navigate the Crypto Landscape with Precision and Confidence</p>
       </div>
+
+      <div className="button-wrapper">
+        <button>Convert your coin!</button>
+      </div>
+      
      
       {loading ? (
         <strong>Loading...</strong>
