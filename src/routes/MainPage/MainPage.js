@@ -64,7 +64,7 @@ function MainPage() {
                   <tr key={coin.id}>
                     <td>{coin.rank}</td>
                     <td>
-                      <Link to={`/main/${coin.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                      <Link to={`/detail/${coin.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                         <img
                           src={`https://static.coinpaprika.com/coin/${coin.id}/logo.png`}
                           alt={`${coin.name} icon`}

@@ -11,14 +11,13 @@ import Detail from "./routes/Detail/Detail";
 import Aboutus from "./routes/Aboutus/Aboutus";
 
 function App() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation(); 
 
-  // Check if the current path is "/"
   const isWelcomePage = location.pathname === "/";
 
   return (
     <div className="app">
-      {/* Render NavBar only if not on WelcomePage */}
+     
       {!isWelcomePage && <NavBar />}
       <Routes>
         <Route path="/" element={<WelcomePage />} />
