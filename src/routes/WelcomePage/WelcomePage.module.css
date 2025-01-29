@@ -1,0 +1,105 @@
+/* General Reset */
+.welcomeContainer {
+    text-align: center;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.5);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #ccc;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #00d2ff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputField::placeholder {
+    color: #aaa;
+  }
+  
+  .inputField:focus {
+    border-color: #3a7bd5;
+  }
+  
+  .ctaButton {
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.7);
+  }
+  
+  .cryptoAnimation {
+    margin-top: 30px;
+    font-size: 3rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff, 0 0 20px #00d2ff;
+    }
+    100% {
+      text-shadow: 0 0 10px #3a7bd5, 0 0 20px #3a7bd5, 0 0 30px #3a7bd5;
+    }
+  }
+  
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
