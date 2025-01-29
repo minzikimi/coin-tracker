@@ -1,9 +1,17 @@
 
+// import { useParams } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 
 function Detail (){
-    return <h1>this is detail page</h1>
 
-    const Base_API_URL = "https://api.coinpaprika.com/v1/coins";
+
+
+
+
+    return (<h1>this is detail page</h1>)
+
+    
 }
 
 

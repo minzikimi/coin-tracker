@@ -1,11 +1,13 @@
 import "../Modal/Modal.css";
-import "../Converter/Converter";
+import Converter from "../Converter/Converter";
 
-function Modal (){
+function Modal ({ onClose }){
     return (
         <div>
-            <button>X</button>
+             <button onClick={onClose}>X</button>
             <Converter />
         </div>
     )
 }
+
+export default Modal;

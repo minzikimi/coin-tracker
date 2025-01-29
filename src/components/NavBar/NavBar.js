@@ -10,14 +10,17 @@ function NavBar(){
                 <img src={horizontalLogo} alt="logo" className="logo" />
                     <ul className="nav-links">
                         <li><Link to="/">Welcome</Link></li>
-                        <li><Link to="/main">Coin List</Link></li>
+                        <li><Link to="/main">Cryptocurrencies</Link></li>
                         <li><Link to="/watchlist">Watch List</Link></li> 
                         
                     </ul>
                 </div>
                
             </nav>
-            <h1>Hello HYPER!</h1>
+            <div className="text-container">
+                <h2>Hello name!</h2>
+            </div>
+            
         </header>
       
     )

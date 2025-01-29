@@ -1,42 +1,49 @@
-import { useEffect, useState } from "react";
-import Converter from "../../components/Converter/Converter";
+
 import { Link } from "react-router-dom";
 import "./MainPage.css";
+import useFetchCryptoData from "../../hooks/useFetchCryptoData";
+import Modal from "../../components/Modal/Modal";
+import { useState } from "react";
 
 function MainPage() {
-  const [loading, setLoading] = useState(true);
-  const [coins, setCoins] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [coins, setCoins] = useState([]);
 
 
-  const API_URL = "https://api.coinpaprika.com/v1/tickers";
+  // const API_URL = "https://api.coinpaprika.com/v1/tickers";
 
-  useEffect(() => {
-    fetch(API_URL)
-      .then(response => {
-        if (!response.ok) throw new Error("Failed to fetch data");
-        return response.json();
-      })
-      .then(data => {
-        setCoins(data.slice(0, 100));
-        setLoading(false);
-      })
-      .catch(err => {
+  // useEffect(() => {
+  //   fetch(API_URL)
+  //     .then(response => {
+  //       if (!response.ok) throw new Error("Failed to fetch data");
+  //       return response.json();
+  //     })
+  //     .then(data => {
+  //       setCoins(data.slice(0, 100));
+  //       setLoading(false);
+  //     })
+  //     .catch(err => {
 
-        setLoading(false);
-      });
-  }, []);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
+    const { cryptoData: coins, loading } = useFetchCryptoData("tickers");
+    const [isModalOpen,setOpenModal]=useState(false);
 
   return (
     <div>
-      <Converter />
+    
       <div className="main-page-text">
         <h1>Your Crypto, Your Control: Track, Analyze, Succeed</h1>
         <p>Navigate the Crypto Landscape with Precision and Confidence</p>
       </div>
 
       <div className="button-wrapper">
-        <button>Convert your coin!</button>
+        <button 
+        className="openModalBtn"
+        onClick={()=>setOpenModal(true)}>Convert your coin!</button>
+        {isModalOpen && <Modal onClose={() => setOpenModal(false)} />}
       </div>
       
      
