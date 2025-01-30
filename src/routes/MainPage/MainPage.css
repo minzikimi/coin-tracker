@@ -10,22 +10,27 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    margin:0;
 
-    button{
-        background-color: var(--accent-color);
-        color:white;
+    .openModalBtn{
+        background-color:var(--secondary-color);
         padding:2rem;
         font-size: 1.5rem;
-        border-radius:8px;
+        border-radius:30px;
         border:none;
         cursor: pointer;
+        border:2px solid rgba(255, 255, 255, 0.722);
+        font-weight: bold;
     }
-    button:hover {
-      background-color: darken(#FF6B00, 10%);
+    .openModalBtn:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
   }
 
+  .pepe{
+    border:5px solid white;
+    border-radius: 50%;
   }
   
   .coin-table {
@@ -47,7 +52,7 @@
         cursor: pointer;
     }
     thead {
-        background-color: var(--secondary-color);
+        background-color: var(--accent-color);
         color: white;
     }
     th {
@@ -67,7 +72,7 @@
   }
   
 .main-page-text{
-  padding:4rem;
+  padding:3rem;
 }
   
   @media screen and (max-width: 600px) {

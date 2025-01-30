@@ -1,0 +1,33 @@
+/* Detail.module.css */
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .infoSection {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .addToWatchlistBtn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    font-size:1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .addToWatchlistBtn:hover {
+    background-color: #f75c02;
+
+  }
