@@ -24,7 +24,7 @@ function Detail() {
 
   return (
     <div>
-         <Chart coinId={id} />//it doesnt work 
+        <Chart coinId={id} />//it doesnt work 
       <h1>Detail Page for {coinDetails.name} ({coinDetails.symbol})</h1>
       <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
