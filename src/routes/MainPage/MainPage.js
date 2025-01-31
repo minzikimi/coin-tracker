@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import Converter from "../../components/Converter/Converter";
 import { Link } from "react-router-dom";
+import { useCoins } from "../../components/CoinContext/CoinContext";
 import "./MainPage.css";
 
 function MainPage() {
   const [loading, setLoading] = useState(true);
-  const [coins, setCoins] = useState([]);
+  /* const [coins, setCoins] = useState([]); */
+  const { coins, setCoins, addToWatchlist } = useCoins();
 
 
   const API_URL = "https://api.coinpaprika.com/v1/tickers";
@@ -24,7 +26,7 @@ function MainPage() {
 
         setLoading(false);
       });
-  }, []);
+  }, [setCoins]);
 
 
   return (
@@ -48,6 +50,7 @@ function MainPage() {
             <thead>
                 <tr>
                   <th>Ranking</th>
+                  <th>Add</th>
                   <th>Name</th>
                   <th>Price</th>
                 </tr>
@@ -56,6 +59,7 @@ function MainPage() {
                 {coins.map((coin) => (
                   <tr key={coin.id}>
                     <td>{coin.rank}</td>
+                    <td><button onClick={()=> addToWatchlist(coin)}>Add to wathclist</button></td>
                     <td>
                       <Link to={`/main/${coin.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                         <img

@@ -1,6 +1,7 @@
 // import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CoinProvider } from "./components/CoinContext/CoinContext";
 import NavBar from "../src/components/NavBar/NavBar";
 import Footer from "../src/components/Footer/Footer";
 import WelcomePage from "./routes/WelcomePage/WelcomePage";
@@ -10,6 +11,7 @@ import Detail from './routes/Detail/Detail';
 
 function App() {
   return (
+    <CoinProvider>
     <Router>
       <div className="app">
         <NavBar />
@@ -22,6 +24,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </CoinProvider>
   );
 }
 

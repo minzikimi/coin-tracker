@@ -7,7 +7,7 @@ function NavBar(){
         <header>
             <nav className="nav-bar">
                 <div className="nav-content">
-                    <img src={horizontalLogo} alt="logo" />;
+                    <img src={horizontalLogo} alt="logo" />
                     <ul className="nav-links">
                         <li><Link to="/">Welcome</Link></li>
                         <li><Link to="/main">Coin List</Link></li>
