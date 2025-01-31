@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useCoins } from "../../components/CoinContext/CoinContext";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import styles from "../Detail/Detail.module.css";
-import Chart from "../../components/Chart";
+// import Chart from "../../components/Chart";
 
 function Detail() {
   const { id } = useParams();
@@ -42,21 +42,17 @@ function Detail() {
 
   return (
     <div>
-<<<<<<< Updated upstream
-      <Chart coinId={id} />
+      {/* <Chart coinId={id} /> */}
       {/* it doesnt work */}
+      <img 
+        src={`https://static.coinpaprika.com/coin/${id}/logo.png`}
+        alt={`${coinDetails.name} logo`}
+        className={styles.logo}
+        style={{ width: '100px', height: '100px', objectFit: 'contain' }}
+      />
       <h1>
         Detail Page for {coinDetails.name} ({coinDetails.symbol})
       </h1>
-=======
-        
-      <h1>Detail Page for {coinDetails.name} ({coinDetails.symbol})</h1>
-      <img
-        src={`https://static.coinpaprika.com/coin/${tickerDetails.id}/logo.png`}
-        alt={`${tickerDetails.name} icon`}
-        style={{ width: "100px", marginRight: "10px" }}/>
-      
->>>>>>> Stashed changes
       <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
           <h2>Coin Information:</h2>
