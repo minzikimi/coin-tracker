@@ -1,13 +1,28 @@
+import React, { useEffect, useRef } from "react";
 import "../Modal/Modal.css";
 import Converter from "../Converter/Converter";
 
-function Modal ({ onClose }){
+function Modal({ isOpen, onClose }) {
+    const dialogRef = useRef(null);
+  
+    useEffect(() => {
+      const dialog = dialogRef.current;
+      if (isOpen) {
+        dialog.showModal();
+      } else {
+        dialog.close();
+      }
+    }, [isOpen]);
+  
     return (
-        <div>
-             <button onClick={onClose}>X</button>
-            <Converter />
-        </div>
-    )
-}
+      <>
+        {isOpen && <div className="modal-backdrop" onClick={onClose}></div>}
+        <dialog ref={dialogRef} className="modal">
+          <button onClick={onClose} className="close-button">X</button>
+          <Converter />
+        </dialog>
+      </>
+    );
+  }
 
-export default Modal;
+  export default Modal;

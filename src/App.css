@@ -45,9 +45,5 @@ strong {
   flex-direction: column;
 }
 
-.button {
-  background-color: var(--secondary-blue);
-  color: white;
-}
 
 
