@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useCoins } from "../../components/CoinContext/CoinContext";
 import "./MainPage.css";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import Modal from "../../components/Modal/Modal";

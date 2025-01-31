@@ -16,7 +16,7 @@ export function CoinProvider({ children }) {
 
   const addToWatchlist = (coin) => {
     setWatchlist((prevWatchlist) => {
-      if (prevWatchlist.find((item) => item.id === coin.id)) {
+      if (prevWatchlist.some((item) => item.id === coin.id)) {
         return prevWatchlist;
       }
       return [...prevWatchlist, coin];
