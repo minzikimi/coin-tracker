@@ -2,6 +2,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { CoinProvider } from "./components/CoinContext/CoinContext";
 import NavBar from "../src/components/NavBar/NavBar";
 import Footer from "../src/components/Footer/Footer";
 import WelcomePage from "./routes/WelcomePage/WelcomePage";
@@ -19,6 +20,7 @@ function App() {
     <div className="app">
      
       {!isWelcomePage && <NavBar />}
+      <CoinProvider> 
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/main" element={<MainPage />} />
@@ -26,6 +28,7 @@ function App() {
         <Route path="/watchlist" element={<WatchList />} />
         <Route path="/aboutus" element={<Aboutus />} />
       </Routes>
+      </CoinProvider> 
       {/* Render Footer only if not on WelcomePage */}
       {!isWelcomePage && <Footer />}
     </div>
@@ -33,9 +36,11 @@ function App() {
 }
 
 const AppWrapper = () => (
+
   <Router>
     <App />
   </Router>
+
 );
 
 export default AppWrapper;

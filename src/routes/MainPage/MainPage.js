@@ -45,7 +45,7 @@ function MainPage() {
       
       {loading ? (
         <strong>Loading...</strong>
-      ) : ( 
+      ) : (
         <div className="table-container">
           <table className="coin-table">
             <thead>

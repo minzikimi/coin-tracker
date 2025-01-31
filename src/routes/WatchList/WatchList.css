@@ -1,0 +1,14 @@
+.add-coin-text {
+  text-align: center;
+  color: white;
+}
+
+.remove-watchlist-btn {
+  all: unset;
+  cursor: pointer;
+  border: none;
+}
+
+.remove-watchlist-btn:hover{
+    transform: scale(1.1);
+}
