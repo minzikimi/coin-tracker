@@ -42,11 +42,21 @@ function Detail() {
 
   return (
     <div>
+<<<<<<< Updated upstream
       <Chart coinId={id} />
       {/* it doesnt work */}
       <h1>
         Detail Page for {coinDetails.name} ({coinDetails.symbol})
       </h1>
+=======
+        
+      <h1>Detail Page for {coinDetails.name} ({coinDetails.symbol})</h1>
+      <img
+        src={`https://static.coinpaprika.com/coin/${tickerDetails.id}/logo.png`}
+        alt={`${tickerDetails.name} icon`}
+        style={{ width: "100px", marginRight: "10px" }}/>
+      
+>>>>>>> Stashed changes
       <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
           <h2>Coin Information:</h2>
