@@ -18,8 +18,13 @@
         font-size: 1.5rem;
         border-radius:8px;
         border:none;
-        
+        cursor: pointer;
     }
+    button:hover {
+      background-color: darken(#FF6B00, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
 
   }
   
@@ -61,7 +66,9 @@
   
   }
   
-
+.main-page-text{
+  padding:4rem;
+}
   
   @media screen and (max-width: 600px) {
     .coin-table {

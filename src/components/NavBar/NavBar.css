@@ -17,6 +17,8 @@ header{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
+        gap:3rem;
+        align-items: center;
     
         li a{
             color:white;
@@ -26,4 +28,23 @@ header{
             color: var(--accent-color);
         }
     }
+    .text-container{
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end; 
+
+        h2{
+            color:white;
+        }
+    }
   }
+
+  .logo {
+    width: 300px;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    gap:10rem;
+}
