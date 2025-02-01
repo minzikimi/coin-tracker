@@ -44,19 +44,21 @@ function Detail() {
     <div>
       {/* <Chart coinId={id} /> */}
       {/* it doesnt work */}
-      <img 
-        src={`https://static.coinpaprika.com/coin/${id}/logo.png`}
-        alt={`${coinDetails.name} logo`}
-        className={styles.logo}
-        style={{ width: '100px', height: '100px', objectFit: 'contain' }}
-      />
+      <div className={styles.detailImageWrapper}>
+        <img 
+          src={`https://static.coinpaprika.com/coin/${id}/logo.png`}
+          alt={`${coinDetails.name} logo`}
+          className={styles.logo}
+          style={{ width: '100px', height: '100px', objectFit: 'contain' }}
+        />
+      </div>
+    
       <h1>
-        Detail Page for {coinDetails.name} ({coinDetails.symbol})
+        {coinDetails.name} ({coinDetails.symbol})
       </h1>
       <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
-          <h2>Coin Information:</h2>
-          <p>Name: {coinDetails.name}</p>
+  
           <p>Symbol:{coinDetails.symbol}</p>
           <p>
             Description: {coinDetails.description || "No description available"}
@@ -64,7 +66,7 @@ function Detail() {
         </div>
 
         <div className={styles.infoSection}>
-          <h2>Ticker Information:</h2>
+    
           <p>Rank: {tickerDetails.rank}</p>
           <p>Total Supply:{tickerDetails.total_supply}</p>
           <p>

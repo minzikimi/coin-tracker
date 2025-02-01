@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color: #123962;
+  background: linear-gradient(135deg, #0a2440 0%, #4c6b7f 50%, #1a3672 100%);
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--primary-blue);
   margin:0;
   padding:0;
