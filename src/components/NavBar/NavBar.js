@@ -12,7 +12,7 @@ function NavBar(){
                     </Link>
                     <ul className="nav-links">
                         <li><Link to="/main">Home</Link></li>
-                        <li><Link to="/chart">Cryptocurrencies</Link></li>
+                        <li><Link to="/cryptocurrencies">Cryptocurrencies</Link></li>
                         <li><Link to="/watchlist">Watchlist</Link></li> 
                     </ul>
                 </div>

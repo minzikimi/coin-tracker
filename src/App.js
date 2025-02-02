@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/main" element={<MainPage />} />
-        <Route path="/chart" element={<Cryptocurrencies />} />
+        <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/watchlist" element={<WatchList />} />
         <Route path="/aboutus" element={<Aboutus />} />
