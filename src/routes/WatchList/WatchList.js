@@ -2,6 +2,7 @@ import "./WatchList.css";
 import { Link } from "react-router-dom";
 import { useCoins } from "../../components/CoinContext/CoinContext";
 import deleteIcon from "../../assets/delete_icon.svg";
+import pepe from "../../assets/pepe-pepe-logo.svg";
 
 function WatchList() {
   const { watchlist, removeFromWatchlist } = useCoins();
@@ -18,7 +19,8 @@ function WatchList() {
 
   return (
     <div>
-      <h1>👀 Your Crypto Watchlist</h1>
+      <h1 style={{ textAlign: 'center', color: 'white' }}>👀 Your Crypto Watchlist</h1>
+    
       <div className="table-container">
         <table className="coin-table">
           <thead>
@@ -57,7 +59,7 @@ function WatchList() {
                     className="remove-watchlist-btn"
                     onClick={() => removeFromWatchlist(coin.id)}
                   >
-                    <img src={deleteIcon} alt="deleteIcon" />
+                    <img className="delete-icon" src={deleteIcon} alt="deleteIcon" />
                   </button>
                 </td>
               </tr>

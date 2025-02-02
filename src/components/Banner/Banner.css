@@ -1,0 +1,15 @@
+.banner-text-container{
+    text-align: center;
+    margin:3rem;
+
+    p{
+        letter-spacing: 0.7px;
+        color:var(--sub-text-color);
+    }
+
+    h1 {
+        color:white;
+        text-align: center;
+      }
+      
+}

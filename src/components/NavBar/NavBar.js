@@ -11,7 +11,8 @@ function NavBar(){
                         <img src={horizontalLogo} alt="logo" className="logo" />
                     </Link>
                     <ul className="nav-links">
-                        <li><Link to="/main">Cryptocurrencies</Link></li>
+                        <li><Link to="/main">Home</Link></li>
+                        <li><Link to="/chart">Cryptocurrencies</Link></li>
                         <li><Link to="/watchlist">Watchlist</Link></li> 
                     </ul>
                 </div>

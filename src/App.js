@@ -10,6 +10,8 @@ import MainPage from "./routes/MainPage/MainPage";
 import WatchList from "./routes/WatchList/WatchList";
 import Detail from "./routes/Detail/Detail"; 
 import Aboutus from "./routes/Aboutus/Aboutus";
+import Cryptocurrencies from "./routes/Cryptocurrencies/Cryptocurrencies";
+
 
 function App() {
   const location = useLocation(); 
@@ -18,12 +20,13 @@ function App() {
 
   return (
     <div className="app">
-     
+     {/* Render Footer only if not on WelcomePage */}
       {!isWelcomePage && <NavBar />}
       <CoinProvider> 
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/main" element={<MainPage />} />
+        <Route path="/chart" element={<Cryptocurrencies />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/watchlist" element={<WatchList />} />
         <Route path="/aboutus" element={<Aboutus />} />

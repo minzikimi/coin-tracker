@@ -14,7 +14,7 @@
 
     .openModalBtn{
         background-color:var(--secondary-color);
-        padding:2rem;
+        padding:1.5rem;
         font-size: 1.5rem;
         border-radius:30px;
         border:none;
@@ -28,73 +28,3 @@
     }
   }
 
-  .pepe {
-    border: 5px solid rgba(243, 224, 112, 0.714);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 
-                0 8px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-}
-
-.pepe:hover {
-    transform: scale(1.05) rotate(3deg);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15), 
-                0 10px 20px rgba(0,0,0,0.25);
-}
-  
-  .coin-table {
-    max-width: 800px;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    overflow: hidden;
-
-    th,td {
-        padding: 12px 15px;
-        text-align: left;
-      }
-
-    tr {
-        text-align: center;
-        cursor: pointer;
-    }
-    thead {
-        background-color: var(--accent-color);
-        color: white;
-    }
-    th {
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 0.85em;
-        letter-spacing: 0.1em;
-    }
-    tbody tr:nth-child(even) {
-        background-color: #f8f8f8;
-    }
-    tbody tr:hover {
-        background-color: #f1f1f1;
-        transition: background-color 0.3s ease;
-    }
-  
-  }
-  
-.main-page-text{
-  padding:3rem;
-}
-  
-  @media screen and (max-width: 600px) {
-    .coin-table {
-      font-size: 0.8em;
-    }
-    
-    .coin-table th,
-    .coin-table td {
-      padding: 8px 10px;
-    }
-  }
