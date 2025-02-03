@@ -1,0 +1,52 @@
+.coin-table {
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    color: white; 
+    border: 1px solid white;
+
+    th,td {
+        padding: 1.5rem;
+        text-align: left;
+      }
+
+    tr {
+        text-align: center;
+        cursor: pointer;
+    }
+    thead {
+        background-color: var(--accent-color);
+        color: white;
+    }
+    th {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        letter-spacing: 0.1em;
+    }
+    tbody tr:nth-child(even) {
+      background-color: rgba(255,255,255,0.05);
+    }
+    tbody tr:hover {
+      background-color: rgba(255,255,255,0.1); 
+      transition: background-color 0.3s ease;
+    }
+  
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .coin-table {
+      font-size: 0.8em;
+    }
+    
+    .coin-table th,
+    .coin-table td {
+      padding: 8px 10px;
+    }
+  }

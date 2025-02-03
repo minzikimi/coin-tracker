@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./WelcomePage.module.css";
 import { Link } from 'react-router-dom';
+import horizontalLogo from "../../assets/vertical-logo.png"
 
 const WelcomePage = () => {
   const [name, setName] = useState("");
@@ -8,16 +9,15 @@ const WelcomePage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.trim()) {
-      setSubmitted(true);
-    }
+    setSubmitted(true);
   };
 
   return (
     <div className={styles.welcomeContainer}>
       {!submitted ? (
         <>
-          <h1 className={styles.heading}>Welcome to Hyper Crypto</h1>
+          <img src={horizontalLogo} alt="logo" className="logo" />
+          <h1 className={styles.heading}>Welcome!</h1>
           <p className={styles.subtext}>
             Your gateway to the future of finance. Secure, fast, and reliable cryptocurrency management.
           </p>
@@ -39,18 +39,17 @@ const WelcomePage = () => {
       ) : (
         <>
           <div className={styles.appLogo}>
-            <h2 className={styles.appName}>Hyper Crypto</h2>
+            {/* <h2 className={styles.appName}>Hyper Crypto</h2> */}
           </div>
-          <h1 className={styles.heading}>Welcome, {name}!</h1>
+          <h1 className={styles.heading}>Hello, {name}!</h1>
           <p className={styles.subtext}>
-            Ready to explore the world of cryptocurrencies? Let’s get started!
+            Ready to explore the world of cryptocurrencies? Let's get started!
           </p>
           <Link to="/main">
-          <button
-            className={styles.ctaButton}
-            // onClick={() => alert("Redirecting to dashboard...")}
-          >Go to Dashboard</button></Link>
-
+            <button className={styles.ctaButton}>
+              Go to Dashboard
+            </button>
+          </Link>
           <div className={styles.cryptoAnimation}>🚀</div>
         </>
       )}
