@@ -11,6 +11,7 @@
 
 .remove-watchlist-btn:hover{
     transform: scale(1.1);
+    filter:invert(44%) sepia(42%) saturate(3083%) hue-rotate(1deg) brightness(102%) contrast(104%)
 }
 
 .delete-icon{

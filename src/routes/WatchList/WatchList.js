@@ -9,7 +9,7 @@ function WatchList() {
 
   return (
     <div>
-      <h1>👀 Your Crypto Watchlist</h1>
+      <h1 style={{ textAlign: 'center', color: 'white' }} >👀 Your Crypto Watchlist</h1>
      { watchlist.length === 0 ? (
       <h2 className="add-coin-text">
         Your watchlist is empty. Please add coins.
