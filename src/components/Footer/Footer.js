@@ -22,41 +22,41 @@ function Footer() {
         </div>
 
         <div className="social-media">
-        <a href="" target="_blank" rel="noopener noreferrer">
-            <img 
-                src={xLogo} 
-                alt="xsocial" 
-                className="social-icon" 
-            />
-           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
-            <img 
-                src={instagramLogo} 
-                alt="Instagram" 
-                className="social-icon" 
-            />
-           </a>
-           <a href="" target="_blank" rel="noopener noreferrer">
-            <img 
-                src={facebookLogo} 
-                alt="Facebook" 
-                className="social-icon" 
-            />
-           </a>
-           <a href="" target="_blank" rel="noopener noreferrer">
-            <img 
-                src={youtubeLogo} 
-                alt="Youtube" 
-                className="social-icon" 
-            />
-           </a>
-           <a href="" target="_blank" rel="noopener noreferrer">
-            <img 
-                src={linkedinLogo} 
-                alt="Linkedin" 
-                className="social-icon" 
-            />
-           </a>
+              <img 
+                  src={xLogo} 
+                  alt="xsocial" 
+                  className="social-icon" 
+              />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img 
+                  src={instagramLogo} 
+                  alt="Instagram" 
+                  className="social-icon" 
+              />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img 
+                  src={facebookLogo} 
+                  alt="Facebook" 
+                  className="social-icon" 
+              />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img 
+                  src={youtubeLogo} 
+                  alt="Youtube" 
+                  className="social-icon" 
+              />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img 
+                  src={linkedinLogo} 
+                  alt="Linkedin" 
+                  className="social-icon" 
+              />
+            </a>
         </div>
 
         <div className="footer-text">
