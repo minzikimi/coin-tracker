@@ -2,16 +2,22 @@
   --background-color: #123962;
   --main-text-color:white;
   --sub-text-color:rgb(185, 185, 185);
-  --accent-color:  #FF6B00;
+  --accent-color:  #fd772a;
   --secondary-color:#ADD8E6;
 }
 
 body {
-  background-color: #123962;
+  background: linear-gradient(135deg, 
+  #0a1c44 0%, 
+  #1c3a6e 50%, 
+  #0f2555 100%
+);
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--primary-blue);
-  margin:0;
-  padding:0;
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
 }
 
@@ -20,14 +26,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  color:white;
-  text-align: center;
-}
-
-p{
-  color:var(--sub-text-color);
-}
 
 
 strong {

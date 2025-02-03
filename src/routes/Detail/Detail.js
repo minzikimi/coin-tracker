@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useCoins } from "../../components/CoinContext/CoinContext";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import styles from "../Detail/Detail.module.css";
-import Chart from "../../components/Chart";
+// import Chart from "../../components/Chart";
 
 function Detail() {
   const { id } = useParams();
@@ -42,15 +42,23 @@ function Detail() {
 
   return (
     <div>
-      <Chart coinId={id} />
+      {/* <Chart coinId={id} /> */}
       {/* it doesnt work */}
+      <div className={styles.detailImageWrapper}>
+        <img 
+          src={`https://static.coinpaprika.com/coin/${id}/logo.png`}
+          alt={`${coinDetails.name} logo`}
+          className={styles.logo}
+          style={{ width: '100px', height: '100px', objectFit: 'contain' }}
+        />
+      </div>
+    
       <h1>
-        Detail Page for {coinDetails.name} ({coinDetails.symbol})
+        {coinDetails.name} ({coinDetails.symbol})
       </h1>
       <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
-          <h2>Coin Information:</h2>
-          <p>Name: {coinDetails.name}</p>
+  
           <p>Symbol:{coinDetails.symbol}</p>
           <p>
             Description: {coinDetails.description || "No description available"}
@@ -58,7 +66,7 @@ function Detail() {
         </div>
 
         <div className={styles.infoSection}>
-          <h2>Ticker Information:</h2>
+    
           <p>Rank: {tickerDetails.rank}</p>
           <p>Total Supply:{tickerDetails.total_supply}</p>
           <p>
