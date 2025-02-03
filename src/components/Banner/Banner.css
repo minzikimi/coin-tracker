@@ -1,15 +1,21 @@
-.banner-text-container{
-    text-align: center;
-    margin:3rem;
+.banner-text-container {
+    align-items: center;
+    justify-content: center;
+    margin: clamp(1rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column; 
 
-    p{
-        letter-spacing: 0.7px;
-        color:var(--sub-text-color);
+    p {
+        letter-spacing: 0.8px;
+        color: var(--sub-text-color);
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        line-height: 1.5;
     }
 
     h1 {
-        color:white;
+        color: white;
         text-align: center;
-      }
-      
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+        line-height: 1.2;
+    }
 }

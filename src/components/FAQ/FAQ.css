@@ -1,0 +1,14 @@
+.faq-wrapper {
+    display: flex;
+    justify-content: center;
+    margin:2rem;
+    padding: 2rem;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    gap:4rem;
+    font-size: 1.2rem;
+}
