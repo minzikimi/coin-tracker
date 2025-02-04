@@ -53,10 +53,11 @@ function Detail() {
         />
       </div>
     
+      
+      <div className={styles.detailContainer}>
       <h1>
         {coinDetails.name} ({coinDetails.symbol})
       </h1>
-      <div className={styles.detailContainer}>
         <div className={styles.infoSection}>
   
           <p>Symbol:{coinDetails.symbol}</p>
