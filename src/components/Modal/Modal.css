@@ -11,7 +11,7 @@
   .modal {
     z-index: 1001;
     border-radius: 8px;
-    height: 18rem;
+    max-height: 18rem;
     text-align: center;
     padding:2rem;
     background: linear-gradient(135deg, 
