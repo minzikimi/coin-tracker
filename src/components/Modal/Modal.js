@@ -6,7 +6,7 @@ function Modal({ isOpen, onClose }) {
     const dialogRef = useRef("");
   
     useEffect(() => {
-      const dialog = dialogRef.current;
+      const dialog = dialogRef.current; //using ref to access dialaog(dom) element
       if (isOpen) {
         dialog.showModal();
       } else {

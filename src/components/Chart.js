@@ -20,7 +20,7 @@ ChartJS.register(
 );
 
 const options = {
-  responsive: true,
+  responsive: true,//i added responsive true but why its not so responsive?
   plugins: {
     legend: {
       position: "top",
@@ -36,7 +36,7 @@ const Chart = () => {
   const { cryptoData: globalData, loading } = useFetchCryptoData('global');
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <strong>Loading...</strong>;
   }
 
   const data = {

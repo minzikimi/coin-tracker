@@ -72,6 +72,10 @@
     }
 }
 
+.faq-answer{
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .faq-container {
         flex-direction: column;

@@ -6,14 +6,23 @@ import deleteIcon from "../../assets/delete_icon.svg";
 function WatchList() {
   const { watchlist, removeFromWatchlist } = useCoins();
 
+  if (watchlist.length === 0) {
+    return (
+      <div className="empty-watchlist">
+         <h2 className="add-coin-text">
+          Your watchlist is empty. Add some coins!
+        </h2>
+        <img src={pepe} alt="Pepe" className="pepe" />
+      </div>
+    );
+  }
+
+  watchlist.sort((a, b) => a.rank - b.rank);
+
   return (
     <div>
-      <h1 className="watchlist-title" >👀 Your Crypto Watchlist</h1>
-     { watchlist.length === 0 ? (
-      <h2 className="add-coin-text">
-        Your watchlist is empty.
-      </h2>
-      ): (
+      <h1 style={{ textAlign: 'center', color: 'white' }}>👀 Your Crypto Watchlist</h1>
+    
       <div className="table-container">
         <table className="coin-table">
           <thead>

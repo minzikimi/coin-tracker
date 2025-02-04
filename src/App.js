@@ -14,8 +14,9 @@ import Cryptocurrencies from "./routes/Cryptocurrencies/Cryptocurrencies";
 
 
 function App() {
+  //use useLocation hook to get current page's path information
   const location = useLocation(); 
-
+  //check if current page is the Welcome page    
   const isWelcomePage = location.pathname === "/";
 
   return (
@@ -38,6 +39,8 @@ function App() {
   );
 }
 
+//wrapper component to render App within React Router context
+//necessary to use React Router hooks like useLocation
 const AppWrapper = () => (
 
   <Router>

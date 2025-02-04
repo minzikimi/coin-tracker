@@ -25,15 +25,15 @@ const Carousel = () => {
     const handleDragStart = (e) => e.preventDefault();
 
     if (loadingCoins || loadingGlobalData) {
-        return <div>Loading...</div>;
+        return <strong>Loading...</strong>;
     }
 
     if (errorCoins || errorGlobalData) {
-        return <div>Error: {errorCoins?.message || errorGlobalData?.message}</div>;
+        return <strong>Error: {errorCoins?.message || errorGlobalData?.message}</strong>;
     }
 
     if (combinedData.length === 0) {
-        return <div>No data available</div>;
+        return <strong>No data available</strong>;
     }
 
     const items = combinedData.map((coin) => (
