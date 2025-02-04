@@ -5,7 +5,7 @@ import horizontalLogo from "../../assets/horizontal-logo.png"
 function NavBar(){
     return (
         <header>
-            <nav className="nav-bar">
+            <nav>
                 <div className="nav-content">
                     <Link to="/">
                         <img src={horizontalLogo} alt="logo" className="logo" />
@@ -17,9 +17,9 @@ function NavBar(){
                     </ul>
                 </div>
             </nav>
-            <div className="text-container">
+            {/* <div className="text-container">
                 <h2>Hello name!</h2>
-            </div>
+            </div> */}
         </header>
     )
 }

@@ -3,7 +3,7 @@ import "../Modal/Modal.css";
 import Converter from "../Converter/Converter";
 
 function Modal({ isOpen, onClose }) {
-    const dialogRef = useRef(null);
+    const dialogRef = useRef("");
   
     useEffect(() => {
       const dialog = dialogRef.current;

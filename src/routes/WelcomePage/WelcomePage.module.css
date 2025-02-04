@@ -77,3 +77,9 @@
   color: white;
   font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+  .inputField {
+    width: auto;
+  }
+}
