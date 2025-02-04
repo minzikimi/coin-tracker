@@ -32,9 +32,9 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 # 🛠 Tech Stack
 
 ## 🖥 Frontend
-- **React.js** (v18.2.0): Core library for building the user interface
-- **React Router** (v6.8.1): Handling navigation and routing in the app
-- **Context API**: For efficient state management across components
+- **React.js** (v18.2.0)
+- **React Router** (v6.8.1)
+- **Context API**
 
 ## 📊 Data Visualization
 - **Chart.js** (v4.2.1): Creating interactive and responsive charts
