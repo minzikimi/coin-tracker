@@ -14,8 +14,8 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-links">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/main">Cryptocurrencies</Link></li>
+            <li><Link to="/main">Home</Link></li>
+            <li><Link to="/cryptocurrencies">Cryptocurrencies</Link></li>
             <li><Link to="/watchlist">Watchlist</Link></li>
             <li><Link to="/aboutus">About us</Link></li>
           </ul>

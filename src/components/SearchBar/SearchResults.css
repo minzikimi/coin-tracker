@@ -1,0 +1,24 @@
+.search-result-container {
+  max-width: 750px;
+  width: 100%;
+}
+
+.search-result-list {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-top: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+
+  .search-result-item {
+    padding: 5px 5px;
+    font-size: 1rem;
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+ 
