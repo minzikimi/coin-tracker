@@ -35,3 +35,9 @@
               0 10px 20px rgba(0,0,0,0.25);
 }
 
+.empty-watchlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
