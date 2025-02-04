@@ -13,12 +13,31 @@
   max-height: 200px;
   overflow-y: auto;
   list-style: none;
+}
 
+.search-result-item {
+  padding: 3.5px;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .search-result-container {
+    max-width: 580px;
+  }
   .search-result-item {
-    padding: 5px 5px;
     font-size: 1rem;
-    padding-left: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 2.5px;
   }
 }
- 
+
+@media screen and (max-width: 600px) {
+  .search-result-container {
+    max-width: 430px;
+  }
+  .search-result-item {
+    font-size: 0.9rem;
+    padding: 2px;
+  }
+}

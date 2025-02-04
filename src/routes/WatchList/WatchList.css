@@ -1,6 +1,13 @@
+.watchlist-title {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
 .add-coin-text {
   text-align: center;
   color: white;
+  font-size: 1.5rem;
 }
 
 .remove-watchlist-btn {
@@ -9,30 +16,22 @@
   border: none;
 }
 
-.remove-watchlist-btn:hover{
-    transform: scale(1.1);
-    filter:invert(44%) sepia(42%) saturate(3083%) hue-rotate(1deg) brightness(102%) contrast(104%)
+.remove-watchlist-btn:hover {
+  transform: scale(1.1);
+  filter: invert(44%) sepia(42%) saturate(3083%) hue-rotate(1deg)
+    brightness(102%) contrast(104%);
 }
 
-.delete-icon{
-  filter:invert(100%);
+.delete-icon {
+  filter: invert(100%);
 }
 
-.pepe {
-  border: 5px solid rgba(243, 224, 112, 0.714);
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1), 
-              0 8px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-}
+@media screen and (max-width: 600px) {
+  .watchlist-title {
+    font-size: 1.5rem;
+  }
 
-.pepe:hover {
-  transform: scale(1.05) rotate(3deg);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15), 
-              0 10px 20px rgba(0,0,0,0.25);
+  .add-coin-text {
+    font-size: 1.2rem;
+  }
 }
-
