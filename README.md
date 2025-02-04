@@ -72,3 +72,9 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 ## 🌟 Acknowledgments
 - Big Thanks to CoinPaprika API for amazing free cryptocurrency data
 - Inspired by the dynamic world of cryptocurrency, (but be careful to invest.)
+
+## 🤝 Contributors
+-Minji Kim
+-Hui Chcen
+-Chiranjeevi V
+-Ghazal 
