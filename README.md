@@ -75,7 +75,7 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 
 ## 🤝 Contributors
 - Minji Kim : 
-- Hui Chcen :
+- Hui Chen :
 - Chiranjeevi V :
 - Ghazal Lalehgani :
 
