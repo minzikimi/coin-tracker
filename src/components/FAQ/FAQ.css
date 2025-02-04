@@ -1,5 +1,7 @@
 .faq-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin:2rem;
     padding: 2rem;
@@ -9,6 +11,35 @@
     display: flex;
     flex-direction: row;
     color:white;
-    gap:4rem;
     font-size: 1.2rem;
+
+    .faq-title{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-list{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+        .faq-item{
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    cursor: pointer;
+
+    h3 {
+        text-align: left; 
+        flex-grow: 1; 
+    }
 }

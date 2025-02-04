@@ -34,9 +34,8 @@ function MainPage() {
          <ShinyText text="Convert your seed today!" disabled={false} speed={3} className='custom-class' />
         </button>
         <Modal isOpen={isModalOpen} onClose={closeModal} />
-
-        
       </div>
+
       <FAQ />
       
    

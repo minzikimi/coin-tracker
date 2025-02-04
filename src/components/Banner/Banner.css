@@ -4,12 +4,14 @@
     margin: clamp(1rem, 5vw, 3rem);
     display: flex;
     flex-direction: column; 
+    
 
     p {
         letter-spacing: 0.8px;
         color: var(--sub-text-color);
         font-size: clamp(0.9rem, 2vw, 1.2rem);
         line-height: 1.5;
+        margin:0;
     }
 
     h1 {

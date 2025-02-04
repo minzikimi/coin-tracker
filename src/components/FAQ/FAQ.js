@@ -38,7 +38,10 @@ const FAQ = () => {
     return (
         <div className="faq-wrapper">
             <div className='faq-container'>
-                <h2 className='faq-title'>Frequently Asked Questions</h2>
+                <div className='faq-title'>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+               
                 <div className='faq-list'>
                     {faqItems.map((item, index) => (
                         <FAQItem 
