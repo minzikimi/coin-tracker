@@ -10,7 +10,7 @@ function WatchList() {
   if (watchlist.length === 0) {
     return (
       <h2 className="add-coin-text">
-        Your watchlist is empty. Please add coins.
+        Your watchlist is empty.
       </h2>
     );
   }

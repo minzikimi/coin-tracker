@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import useFetchCryptoData from '../../hooks/useFetchCryptoData';
 import "./Carousel.css";
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
     const { cryptoData: coins, loading: loadingCoins, error: errorCoins } = useFetchCryptoData("tickers");
@@ -36,6 +37,7 @@ const Carousel = () => {
     }
 
     const items = combinedData.map((coin) => (
+        <Link to={`/detail/${coin.id}`} style={{ textDecoration: "none", color: "inherit" }}>
         <div style={{ color:"white" }} key={coin.id} className="carousel-item">
             <img 
                 src={`https://static.coinpaprika.com/coin/${coin.id}/logo.png`}
@@ -51,7 +53,7 @@ const Carousel = () => {
             <div style={{ fontSize: 22, fontWeight: 500, color:"white" }}>
                 ${parseFloat(coin.quotes.USD.price).toFixed(2)}
             </div>
-        </div>
+        </div></Link>
     ));
 
     const responsive = {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
+import "./Converter.css";
 
 function Converter() {
     const { cryptoData: coins, loading } = useFetchCryptoData("tickers");
@@ -19,16 +20,16 @@ function Converter() {
 
     return (
         <div>
-            <h2>Converter{loading ? "" : `(${coins.length})`}</h2>
+            {/* <h2>Converter{loading ? "" : `(${coins.length})`}</h2> */}
             {loading ? (
                 <strong>Loading...</strong>
             ) : (
-                <>
+                <> <div className="converter-wrapper">
                     <div>
                         <h2>Write your seed money</h2>
                         <form>
-                            <label>Type here : </label>
-                            <input type="number" onChange={onChange} value={seed} /> USD
+                            <label>Type here :&nbsp;</label>
+                            <input type="number" onChange={onChange} value={seed} />&nbsp;USD
                         </form>
                         
                     </div>
@@ -37,7 +38,7 @@ function Converter() {
                             <option>Select a coin</option>
                             {coins.map(coin => (
                                 <option key={coin.id} value={coin.id}>
-                                    {coin.name} ({coin.symbol}):${coin.quotes.USD.price.toFixed(2)} USD
+                                    {coin.name} ({coin.symbol}) : ${coin.quotes.USD.price.toFixed(2)} USD
                                 </option>
                             ))}
                         </select>
@@ -47,6 +48,8 @@ function Converter() {
                            
                         </div>
                     </div>
+                </div>
+                    
                 </>
             )}
         </div>

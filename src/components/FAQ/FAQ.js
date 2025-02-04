@@ -31,7 +31,7 @@ const FAQ = () => {
         },
         { 
             question: "Is Cryptocurrency safe to invest?", 
-            answer: "Cryptocurrency investments carry high volatility and risk. Always do thorough research and invest responsibly." 
+            answer: "No! Cryptocurrency investments carry high volatility and risk. Always do thorough research and invest responsibly." 
         }
     ];
 

@@ -1,4 +1,3 @@
-/* Detail.module.css */
 .detailContainer {
     display: flex;
     flex-direction: column;
@@ -7,6 +6,7 @@
     margin: 0 auto;
     padding: 20px;
     color:white;
+    text-align: center;
   }
   
   .infoSection {
@@ -14,7 +14,17 @@
     padding: 20px;
     margin-bottom: 15px;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+     
+  }
+
+  .infoTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 
   }
   
@@ -22,11 +32,12 @@
     background-color: var(--accent-color);
     color: white;
     border: none;
-    font-size:1rem;
+    font-size:1.3rem;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold;
   }
   
   .addToWatchlistBtn:hover {

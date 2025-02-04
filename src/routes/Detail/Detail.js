@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useCoins } from "../../components/CoinContext/CoinContext";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import styles from "../Detail/Detail.module.css";
-// import Chart from "../../components/Chart";
+import Chart from "../../components/Chart";
 
 function Detail() {
   const { id } = useParams();
@@ -42,7 +42,7 @@ function Detail() {
 
   return (
     <div>
-      {/* <Chart coinId={id} /> */}
+     
       {/* it doesnt work */}
       <div className={styles.detailImageWrapper}>
         <img 
@@ -60,30 +60,29 @@ function Detail() {
       </h1>
         <div className={styles.infoSection}>
   
-          <p>Symbol:{coinDetails.symbol}</p>
+
           <p>
             Description: {coinDetails.description || "No description available"}
           </p>
         </div>
-
-        <div className={styles.infoSection}>
-    
-          <p>Rank: {tickerDetails.rank}</p>
-          <p>Total Supply:{tickerDetails.total_supply}</p>
-          <p>
-            Price (USD):$
-            {parseFloat(tickerDetails.quotes?.USD?.price || 0).toFixed(2)}
-          </p>
-          <p>
-            Market Cap: $
-            {parseFloat(
-              tickerDetails.quotes?.USD?.market_cap || 0
-            ).toLocaleString()}
-          </p>
-        </div>
-        <button className={styles.addToWatchlistBtn} onClick={handleClick}>
-          Add to Watchlist
-        </button>
+       <Chart coinId={id} /> 
+       <div className={styles.infoSection}>
+        <p><span className={styles.infoTitle}>Rank : </span> {tickerDetails.rank}</p>
+        <p><span className={styles.infoTitle}>Total Supply : </span> {tickerDetails.total_supply}</p>
+        <p>
+          <span className={styles.infoTitle}>Price (USD) : </span> $
+          {parseFloat(tickerDetails.quotes?.USD?.price || 0).toFixed(2)}
+        </p>
+        <p>
+          <span className={styles.infoTitle}>Market Cap : </span> $
+          {parseFloat(
+            tickerDetails.quotes?.USD?.market_cap || 0
+          ).toLocaleString()}
+        </p>
+      </div>
+      <button className={styles.addToWatchlistBtn} onClick={handleClick}>
+        Add to Watchlist
+      </button>
         {message && <p>{message}</p>}
       </div>
     </div>
