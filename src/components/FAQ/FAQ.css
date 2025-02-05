@@ -10,7 +10,8 @@
     #122651 50%, 
     #041027 100%
     );
-    margin: clamp(2rem, 5vw, 4rem) 0 0 0;
+    /* margin: clamp(2rem, 5vw, 4rem) 0 0 0; */
+    margin:3rem;
     width: 100%;
     box-sizing: border-box;
 }

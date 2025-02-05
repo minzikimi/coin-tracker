@@ -42,8 +42,10 @@
 
 .detailContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .chartSection {
@@ -54,6 +56,13 @@
 .infoSection {
   width: 100%;
   text-align: center;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
 }
 
 .infoTitle {
@@ -61,11 +70,6 @@
   font-size: 1.2rem;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
 
 .addToWatchlistBtn {
   background-color: var(--accent-color);
