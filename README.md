@@ -61,8 +61,8 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 
 ### Installation
 1. Clone the repository
-2. Install dependencies
-3. Run the application dale!
+2. Install dependencies (npm install)
+3. Run the application dale! (npm start)
 
 ## 📦 Available Scripts
 - `npm start`: Runs the app in development mode
