@@ -46,7 +46,7 @@
         justify-content: flex-start;
         padding: 0 1rem;
         box-sizing: border-box;
-        font-size: 2rem;
+    
         
         .faq-item {
             border-bottom: 1px solid var(--sub-text-color);
