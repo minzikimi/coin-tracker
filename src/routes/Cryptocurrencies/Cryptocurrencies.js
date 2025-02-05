@@ -6,7 +6,9 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import SearchResults from "../../components/SearchBar/SearchResults";
 
 const Cryptocurrencies = () => {
+  //use customhook to fetch api
   const { cryptoData: coins, loading } = useFetchCryptoData("tickers");
+  //this is for searchbar
   const [results, setResults] = useState([]);
 
   return (

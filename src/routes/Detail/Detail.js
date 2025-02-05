@@ -7,6 +7,7 @@ import Chart from "../../components/Chart";
 
 function Detail() {
   const { id } = useParams();
+  //use custom hook to fetch api with different end point
   const { cryptoData: coinDetails, loading: loadingCoinDetails } =
     useFetchCryptoData(`coins/${id}`);
   const { cryptoData: tickerDetails, loading: loadingTickerDetails } =
@@ -42,8 +43,6 @@ function Detail() {
 
   return (
     <div>
-     
-      {/* it doesnt work */}
       <div className={styles.detailImageWrapper}>
         <img 
           src={`https://static.coinpaprika.com/coin/${id}/logo.png`}

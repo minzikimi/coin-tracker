@@ -45,6 +45,7 @@ function Converter() {
                             ))}
                         </select>
                         <div>
+                            //display result message 
                         {seed !== "" && coinPrice > 0 ? (
                         <h3>You can buy {(seed / coinPrice).toFixed(2)} amount of {coinName}</h3>) : null}
                            

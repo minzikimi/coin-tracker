@@ -35,10 +35,7 @@ function MainPage() {
         </button>
         <Modal isOpen={isModalOpen} onClose={closeModal} />
       </div>
-
       <FAQ />
-      
-   
     </div>
   );
 }
