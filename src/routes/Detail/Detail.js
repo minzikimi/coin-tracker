@@ -62,7 +62,7 @@ function Detail() {
   
 
           <p>
-            Description: {coinDetails.description || "No description available"}
+            {coinDetails.description || "No description available"}
           </p>
         </div>
        <Chart coinId={id} /> 
