@@ -4,6 +4,8 @@ import { useCoins } from "../../components/CoinContext/CoinContext";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import styles from "../Detail/Detail.module.css";
 import Chart from "../../components/Chart";
+import { Link } from "react-router-dom";
+import backSvg from "../../assets/back-svgrepo-com.svg";
 
 function Detail() {
   const { id } = useParams();
@@ -42,47 +44,44 @@ function Detail() {
   }
 
   return (
-    <div>
+    <div className={styles.detailPage}>
+      <div className={styles.backButtonWrapper}>
+        <Link to="/cryptocurrencies" className={styles.backButton}>
+          <img src={backSvg}></img>
+        </Link>
+      </div>
       <div className={styles.detailImageWrapper}>
         <img 
           src={`https://static.coinpaprika.com/coin/${id}/logo.png`}
           alt={`${coinDetails.name} logo`}
           className={styles.logo}
-          style={{ width: '100px', height: '100px', objectFit: 'contain' }}
         />
+        <h1>{coinDetails.name} ({coinDetails.symbol})</h1>
       </div>
-    
+      
+  
       
       <div className={styles.detailContainer}>
-      <h1>
-        {coinDetails.name} ({coinDetails.symbol})
-      </h1>
-        <div className={styles.infoSection}>
-  
-
-          <p>
-            {coinDetails.description || "No description available"}
-          </p>
+        <div className={styles.chartSection}>
+          <Chart coinId={id} />
         </div>
-       <Chart coinId={id} /> 
-       <div className={styles.infoSection}>
-        <p><span className={styles.infoTitle}>Rank : </span> {tickerDetails.rank}</p>
-        <p><span className={styles.infoTitle}>Total Supply : </span> {tickerDetails.total_supply}</p>
-        <p>
-          <span className={styles.infoTitle}>Price (USD) : </span> $
-          {parseFloat(tickerDetails.quotes?.USD?.price || 0).toFixed(2)}
-        </p>
-        <p>
-          <span className={styles.infoTitle}>Market Cap : </span> $
-          {parseFloat(
-            tickerDetails.quotes?.USD?.market_cap || 0
-          ).toLocaleString()}
-        </p>
-      </div>
-      <button className={styles.addToWatchlistBtn} onClick={handleClick}>
-        Add to Watchlist
-      </button>
-        {message && <p>{message}</p>}
+        <div className={styles.infoSection}>
+          <p>{coinDetails.description || "No description available"}</p>
+          <p><span className={styles.infoTitle}>Rank : </span> {tickerDetails.rank}</p>
+          <p><span className={styles.infoTitle}>Total Supply : </span> {tickerDetails.total_supply}</p>
+          <p>
+            <span className={styles.infoTitle}>Price (USD) : </span> $
+            {parseFloat(tickerDetails.quotes?.USD?.price || 0).toFixed(2)}
+          </p>
+          <p>
+            <span className={styles.infoTitle}>Market Cap : </span> $
+            {parseFloat(tickerDetails.quotes?.USD?.market_cap || 0).toLocaleString()}
+          </p>
+          <button className={styles.addToWatchlistBtn} onClick={handleClick}>
+            Add to Watchlist
+          </button>
+          {message && <p>{message}</p>}
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function WatchList() {
     return (
       
       <div className="empty-watchlist">
-        <h1 className="watchlist-title">Your Crypto Watchlist</h1>
+        {/* <h1 className="watchlist-title">Your Crypto Watchlist</h1> */}
          <h2 className="add-coin-text">
           Your watchlist is empty. 
         </h2>
