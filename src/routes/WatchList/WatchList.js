@@ -7,9 +7,12 @@ import pepe from "../../assets/pepe-pepe-logo.svg";
 function WatchList() {
   const { watchlist, removeFromWatchlist } = useCoins();
 
+  // If the watchlist is empty, display a message and show the Pepe image.
   if (watchlist.length === 0) {
     return (
+      
       <div className="empty-watchlist">
+        <h1 className="watchlist-title">👀 Your Crypto Watchlist</h1>
          <h2 className="add-coin-text">
           Your watchlist is empty. Add some coins!
         </h2>
@@ -18,11 +21,12 @@ function WatchList() {
     );
   }
 
+  //Sort the watchlist by coin's rank in ascending order.
   watchlist.sort((a, b) => a.rank - b.rank);
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center', color: 'white' }}>👀 Your Crypto Watchlist</h1>
+      <h1 className="watchlist-title">👀 Your Crypto Watchlist</h1>
     
       <div className="table-container">
         <table className="coin-table">
@@ -35,7 +39,10 @@ function WatchList() {
             </tr>
           </thead>
           <tbody>
-            {watchlist.map((coin) => (
+            {watchlist
+            .slice()
+            .sort((a,b) => (a.rank - b.rank))
+            .map((coin) => (
               <tr key={coin.id}>
                 <td>{coin.rank}</td>
                 <td>
