@@ -73,9 +73,11 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 - Big Thanks to CoinPaprika API for amazing free cryptocurrency data
 - Inspired by the dynamic world of cryptocurrency, (but be careful to invest.)
 
-## 🤝 Contributors
-- Minji Kim : 
-- Hui Chen : Watchlist page (CoinContext) & CSS, SearchBar and SearchResults & CSS.
-- Chiranjeevi V : Welcome page jsx & css module
-- Ghazal Lalehgani : About us page jsx & css
+### Core Team
+| Name | Contributions | 
+|------|---------------|
+| Minji Kim | Project Overview |
+| Hui Chen | Watchlist Page, CSS, SearchBar & SearchResults |
+| Chiranjeevi V | Welcome Page (JSX & CSS Module) |
+| Ghazal Lalehgani | About Us Page (JSX & CSS) |
 
