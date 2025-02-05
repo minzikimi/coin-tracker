@@ -77,7 +77,7 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 | Name | Contributions | 
 |------|---------------|
 | Minji Kim | Project Lead, UI Design, Directories management and all other components not listed below |
-| Hui Chen | Watchlist Page, CSS, SearchBar & SearchResults |
+| Hui Chen | Watchlist Page( Context API ), CSS, SearchBar & SearchResults |
 | Chiranjeevi V | Welcome Page (JSX & CSS Module) |
 | Ghazal Lalehgani | About Us Page (JSX & CSS) |
 
