@@ -11,6 +11,7 @@ export function useCoins() {
 }
 
 export function CoinProvider({ children }) {
+  //Use two states to keep track of the list of coins and the watchlist
   const [coins, setCoins] = useState([]);
   const [watchlist, setWatchlist] = useState([]);
 
