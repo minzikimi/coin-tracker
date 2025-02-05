@@ -1,4 +1,4 @@
-# 🚀 Hyper Crypto: Your Cryptocurrency Companion
+# 🪙 Hyper Crypto: Your Cryptocurrency Companion
 
 ## 📝 Project Overview
 Hyper Crypto is a comprehensive React-based cryptocurrency tracking and management application designed to provide users with real-time crypto market insights and personalized investment tools.
