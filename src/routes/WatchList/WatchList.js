@@ -14,7 +14,7 @@ function WatchList() {
       <div className="empty-watchlist">
         {/* <h1 className="watchlist-title">Your Crypto Watchlist</h1> */}
          <h2 className="add-coin-text">
-          Your watchlist is empty. 
+          Your Watchlist is empty. 
         </h2>
         <img src={pepe} alt="Pepe" className="pepe" />
       </div>

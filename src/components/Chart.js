@@ -62,7 +62,7 @@ const Chart = () => {
 
   return (
     <div>
-      <h2 style={{ textAlign: 'center' }}>Cryptocurrency Market Overview</h2>
+      {/* <h2 style={{ textAlign: 'center' }}>Cryptocurrency Market Overview</h2> */}
       <div style={{ width: 600, height: 300 }}>
         <Bar options={options} data={data} />
       </div>
