@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchResults.css";
 import { Link } from "react-router-dom";
 
+// Accepts the 'results' prop (an array of coin search results) from Cryptocurrencies .
 const SearchResults = ({ results }) => {
   return (
     <div className="search-result-container">

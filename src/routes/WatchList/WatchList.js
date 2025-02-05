@@ -7,6 +7,7 @@ import pepe from "../../assets/pepe-pepe-logo.svg";
 function WatchList() {
   const { watchlist, removeFromWatchlist } = useCoins();
 
+  // If the watchlist is empty, display a message and show the Pepe image.
   if (watchlist.length === 0) {
     return (
       
@@ -20,6 +21,7 @@ function WatchList() {
     );
   }
 
+  //Sort the watchlist by coin's rank in ascending order.
   watchlist.sort((a, b) => a.rank - b.rank);
 
   return (
