@@ -35,20 +35,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="number"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1em;
+      color:white;
+    }
   }
   
-  label {
-    font-weight: bold;
-  }
+.remove-btn{
+  margin:0.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
   
-  input[type="number"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
-  }
-  
-  select {
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
