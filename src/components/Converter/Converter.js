@@ -16,6 +16,7 @@ function Converter() {
     function onSelect(e){
         setCoinPrice(coins[e.target.selectedIndex-1].quotes.USD.price);
         setCoinName(coins[e.target.selectedIndex-1].name);
+        
     }
 
     return (
@@ -28,8 +29,9 @@ function Converter() {
                     <div>
                         <h2>Write your seed money</h2>
                         <form>
-                            <label>Type here :&nbsp;</label>
+                            <label>Type:&nbsp;</label>
                             <input type="number" onChange={onChange} value={seed} />&nbsp;USD
+                            <button className="remove-btn" type="button" onClick={() => setSeed("")}>Remove</button>
                         </form>
                         
                     </div>
