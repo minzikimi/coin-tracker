@@ -44,8 +44,6 @@ Hyper Crypto is a comprehensive React-based cryptocurrency tracking and manageme
 - **Alice Carousel** (v2.7.0): For creating smooth and responsive image carousels
 - **React Icons** (v4.7.1): Utilizing various icon sets in the app
 
-## 🔄 API Integration
-- **Axios** (v1.3.3): Making HTTP requests to fetch cryptocurrency data
 
 ## 💅 Styling
 - **CSS Modules**: For component-scoped styling
