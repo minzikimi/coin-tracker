@@ -1,6 +1,6 @@
 import "./WatchList.css";
 import { Link } from "react-router-dom";
-import { useCoins } from "../../components/CoinContext/CoinContext";
+import { useCoins } from "../../context/CoinContext/CoinContext.js";
 import deleteIcon from "../../assets/delete_icon.svg";
 import pepe from "../../assets/pepe-pepe-logo.svg";
 

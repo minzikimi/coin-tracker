@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useCoins } from "../../components/CoinContext/CoinContext";
+import { useCoins } from "../../context/CoinContext/CoinContext.js";
 import useFetchCryptoData from "../../hooks/useFetchCryptoData";
 import styles from "../Detail/Detail.module.css";
 import Chart from "../../components/Chart";

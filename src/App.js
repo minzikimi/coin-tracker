@@ -2,7 +2,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { CoinProvider } from "./components/CoinContext/CoinContext";
+import { CoinProvider } from "./context/CoinContext/CoinContext";
 import NavBar from "../src/components/NavBar/NavBar";
 import Footer from "../src/components/Footer/Footer";
 import WelcomePage from "./routes/WelcomePage/WelcomePage";
